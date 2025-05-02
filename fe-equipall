@@ -1,0 +1,13 @@
+    local player = game.Players.LocalPlayer
+    local backpack = player:WaitForChild("Backpack")
+        -- Function to equip all tools
+        local function equipAllTools(character)
+            local tools = backpack:GetChildren()
+            for _, tool in pairs(tools) do
+                if tool:IsA("Tool") then
+                    tool.Parent = character
+                end
+            end
+        end
+        -- Equip all tools on script execution
+        equipAllTools(player.Character)
