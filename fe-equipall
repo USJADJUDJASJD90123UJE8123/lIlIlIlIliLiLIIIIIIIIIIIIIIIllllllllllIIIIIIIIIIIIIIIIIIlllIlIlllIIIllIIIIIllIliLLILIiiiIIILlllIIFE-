@@ -1,4 +1,7 @@
-    local player = game.Players.LocalPlayer
+Made by Redex
+
+
+local player = game.Players.LocalPlayer
     local backpack = player:WaitForChild("Backpack")
         -- Function to equip all tools
         local function equipAllTools(character)
